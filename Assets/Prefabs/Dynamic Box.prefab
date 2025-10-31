@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2786196482062284738}
   - component: {fileID: 8746057441157439686}
   - component: {fileID: 573713705646663496}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dynamic Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
