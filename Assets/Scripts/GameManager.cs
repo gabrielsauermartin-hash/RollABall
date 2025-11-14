@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject winTextObject;
     public GameObject restartButton;
+    public GameObject nextLevelButton;
 
     private bool gameEnded = false;
 
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
         }
         winTextObject.SetActive(false);
         restartButton.SetActive(false);
+        nextLevelButton.SetActive(false);
     }
 
     public void EndGame(bool won)
@@ -28,10 +30,21 @@ public class GameManager : MonoBehaviour
         winTextObject.GetComponent<TMPro.TextMeshProUGUI>().text = won ? "You Win!" : "You Lose!";
 
         restartButton.SetActive(true);
+        nextLevelButton.SetActive(won);
     }
 
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void PriorLevel()
+    {
+        SceneManager.LoadScene(0);
     }
 }
