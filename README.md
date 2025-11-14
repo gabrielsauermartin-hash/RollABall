@@ -7,7 +7,8 @@ obstáculos, contador de puntos y la capacidad de reiniciar una partida una vez 
 ### Prerequisitos
 
 Es necesario tener una buena máquina para poder instalar y ejecutar proyectos de Unity, 
-cualquier máquina de baja gama tendrá problemas a la hora de operar en el proyecto.
+cualquier máquina de baja gama tendrá problemas a la hora de operar en el proyecto. Y, para cuando quiera iniciar
+el juego, asegúrese de tener seleccionada la primera escena.
 
 ### Instalación
 
@@ -18,6 +19,13 @@ https://github.com/gabrielsauermartin-hash/RollABall
 
 3. Abra el proyecto dentro del entorno de Unity y ejecútelo (al ejecutarlo, deberían
 descargarse todas las librerías que fueron usadas en el proyecto).
+
+### Función extra
+
+En el proyecto se ha implementado un sistema de patrulla y búsqueda donde, el enemigo atravesará el entorno pasando por puntos
+de patrulla. Pero, en el momento en el que su cono de visión entre en contacto con el jugador, sin ningún obstáculo en el camino,
+dejará la patrulla y perseguirá al jugador. Una vez el jugador rompa la línea de visión con el enemigo o salga de su cono de visión,
+el enemigo reanudará la patrulla por donde la dejó.
 
 ## Autor
 
